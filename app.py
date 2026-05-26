@@ -9,7 +9,7 @@ s3 = boto3.client(
     region_name           = "us-east-1"
 )
 s3.download_file("spitzkop-marketing", "spitzkop_jobs.db", "/tmp/spitzkop_jobs.db")
-print("Base téléchargée depuis S3")
+print("Base telechargee depuis S3")
 
 subprocess.run([
     "datasette", "serve",
